@@ -1,3 +1,14 @@
-This repository contains all the source files needed to follow the series [Kubernetes and everything else](https://rinormaloku.com/series/kubernetes-and-everything-else/)
+## Starting the Web App Locally
+` $ yarn start `
 
-This is the best introduction to Kubernetes and Everything related to be able to deploy scalable and resilient applications on Kubernetes managed clusters.
+## Building the application
+` $ yarn build `
+
+## Building the container
+` $ docker build -f Dockerfile -t $DOCKER_USER_ID/sentiment-analysis-frontend . `
+
+## Running the container
+` $ docker run -d -p 80:80 $DOCKER_USER_ID/sentiment-analysis-frontend `
+
+## Pushing the container
+` $ docker push $DOCKER_USER_ID/sentiment-analysis-frontend `
